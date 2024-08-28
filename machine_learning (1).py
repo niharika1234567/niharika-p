@@ -36,4 +36,4 @@ jobs:
 
     - name: Run the Python script
       run: |
-        python machine_learning(1).py
+        python machine_learning.py
