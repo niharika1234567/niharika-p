@@ -6,16 +6,14 @@ on:
   pull_request:
     branches: [ "main" ]
 
-permissions:
-  contents: write  # Updated to allow write permissions as needed by the workflow
-
 jobs:
   build:
 
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
+    - name: Checkout code
+      uses: actions/checkout@v4
     
     - name: Set up Python 3.10
       uses: actions/setup-python@v3
@@ -36,4 +34,4 @@ jobs:
 
     - name: Run the Python script
       run: |
-        python machine_learning.py  
+        python your_script.py  # Replace 'your_script.py' with the correct filename
