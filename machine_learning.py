@@ -7,7 +7,7 @@ on:
     branches: [ "main" ]
 
 permissions:
-  contents: read
+  contents: write  # Updated to allow write permissions as needed by the workflow
 
 jobs:
   build:
@@ -36,4 +36,4 @@ jobs:
 
     - name: Run the Python script
       run: |
-        python machine_learning.py
+        python machine_learning.py  
