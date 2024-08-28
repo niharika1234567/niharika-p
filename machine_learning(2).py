@@ -38,4 +38,4 @@ polynomial_regression.fit(x,y)
 X_height=[[20.0]]
 target_predicted = polynomial_regression.predict(X_height)
 print(target_predicted)
-python machine_learning(2).py
+python machine_learning(2).ipynb
